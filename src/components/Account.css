@@ -1,0 +1,77 @@
+/* src/components/Account.css */
+
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f3f4f6;
+  min-height: 80vh;
+}
+
+.account h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 2px solid #ddd;
+}
+
+.profile-image input {
+  display: none;
+}
+
+.profile-image label {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-image label:hover {
+  background-color: #45a049;
+}
+
+.account input,
+.account select {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.account button {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.8rem;
+  background-color: #1E90FF;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.account button:hover {
+  background-color: #1C86EE;
+}

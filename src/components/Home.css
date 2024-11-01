@@ -1,0 +1,82 @@
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .product {
+    width: 150px;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: auto;
+  }
+  
+  .product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 0.3rem;
+    margin-top: 0;
+  }
+  
+  .product h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+  
+  .product p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* src/components/Home.css */
+
+.banner {
+    width: 100%;           /* Lebar banner memenuhi seluruh layar */
+    height: 300px;          /* Tentukan tinggi sesuai kebutuhan, bisa juga menggunakan height: 50vh untuk 50% dari tinggi layar */
+    overflow: hidden;       /* Potong bagian gambar yang berlebihan jika ukurannya tidak sesuai */
+    position: relative;
+    border-radius: 8px;
+  }
+  
+  .banner img {
+    width: 100%;            /* Gambar mengisi seluruh lebar kontainer banner */
+    height: 100%;           /* Gambar menyesuaikan tinggi kontainer banner */
+    object-fit: cover;      /* Memotong dan menyesuaikan gambar agar tetap memenuhi kontainer tanpa mengubah aspek rasio */
+    border-radius: 8px;
+  }
+  
+  .banner h1, .banner p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .banner h1 {
+    top: 30%;               /* Posisi judul */
+    font-size: 2.5rem;
+  }
+  
+  .banner p {
+    top: 50%;               /* Posisi deskripsi */
+    font-size: 1.2rem;
+  }
+  
+.home {
+    padding: 20px;
+  }
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr; /* Produk ditampilkan dalam satu kolom di layar kecil */
+    }
+}
