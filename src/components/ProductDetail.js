@@ -74,7 +74,7 @@ function ProductDetail({ products, addToCart }) {
   return (
     <DetailContainer>
       <ImageContainer>
-        <img src="https://via.placeholder.com/300" alt={product.name} />
+        <img src="{product.image}" alt={product.name} />
       </ImageContainer>
       <InfoContainer>
         <ProductTitle>{product.name}</ProductTitle>
