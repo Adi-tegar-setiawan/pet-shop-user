@@ -4,31 +4,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  height: 50px;           /* Tentukan tinggi */
+  padding: 0 1rem;        /* Sesuaikan padding */
   background-color: #1E90FF;
   color: white;
-  height: 30px;
 }
 
 .logo a {
+  font-size: 1.25rem;     /* Sesuaikan ukuran font nama toko */
   text-decoration: none;
-  font-size: 1.5rem;
   color: white;
   font-weight: bold;
 }
 
 .nav {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 .nav a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.875rem;     /* Ukuran font navigasi lebih kecil */
   font-weight: 500;
 }
 
 .nav a:hover {
   color: #ddd;
+}
+
+.profile-icon {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 30px;            /* Ukuran gambar profil lebih kecil */
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
 }
